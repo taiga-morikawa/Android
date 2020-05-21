@@ -1,0 +1,5 @@
+<resources> 
+    <string name="app_name">HelloWorld</string> 
+    <string name="hello_world1">Hello world!</string> 
+    <string name="hello_world2">ようこそAndroidの世界へ</string> 
+</resources>
