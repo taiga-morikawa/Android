@@ -1,31 +1,27 @@
-package nhs90502.hal.ac.mybutton;
+package nhs90416.hal.ac.mycheckbox;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.CheckBox;
 
+public class MainActivity extends Activity {
 
-public class MainActivity extends AppCompatActivity
-{
-    private TextView aTextView;
-    int count;
-
+private TextView aTextView;
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         aTextView = (TextView)findViewById(R.id.myTextView);
-        aTextView.setText("Push myButton!");
-        count = 1;
-
     }
 
-    public void buttonMethod(View myButton)
-    {
-        aTextView.setText(String.format("Pushed %d times",count++));
-
-    }
+public void checkMethod(View myCheckBox){
+    CheckBox aCheckBox = (CheckBox)myCheckBox;
+    String s = (String)aCheckBox.getText();
+    if(aCheckBox.isChecked())
+    aTextView.setText(String.format("%s Checkde", s));
+    else
+    aTextView.setText(String.format("%s UnChecked", s));
+}
 }
