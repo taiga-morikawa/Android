@@ -8,38 +8,36 @@
     >
 
     <TextView
-        android:text="@string/height"
+        android:text="@string/result_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
-
-    <EditText
-        android:id="@+id/edit_height"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="30dip"
-        android:singleLine="true"
         />
 
     <TextView
-        android:text="@string/weight"
+        android:id="@+id/result_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dip"
+        android:textColor="#F00"
         />
 
-    <EditText
-        android:id="@+id/edit_weight"
-        android:layout_width="fill_parent"
+    <TextView
+        android:id="@+id/result_judge"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
         android:layout_marginBottom="30dip"
-        android:singleLine="true"
+        android:textColor="#F00"
         />
 
     <Button
-        android:text="@string/btn_calc"
-        android:id="@+id/button_calc"
+        android:text="@string/btn_reset"
+        android:id="@+id/button_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="buttonMethod"
         />
+
 </LinearLayout>

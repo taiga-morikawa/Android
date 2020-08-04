@@ -1,5 +1,16 @@
-<resources> 
-    <string name="app_name">HelloWorld</string> 
-    <string name="hello_world1">Hello world!</string> 
-    <string name="hello_world2">ようこそAndroidの世界へ</string> 
+<resources>
+    <string name="app_name">MyBMI_EX</string>
+    <string name="sub_name">Result</string>
+    <string name="action_settings">MyBMI</string>
+
+    <string name="height">身長(cm)を入力してください</string>
+    <string name="weight">体重(Kg)を入力してください</string>
+    <string name="btn_calc">BMI計算</string>
+
+    <string name="result_judge_0">やせています</string>
+    <string name="result_judge_1">標準です</string>
+    <string name="result_judge_2">太っています</string>
+
+    <string name="result_msg">結果</string>
+    <string name="btn_reset">戻る</string>
 </resources>
